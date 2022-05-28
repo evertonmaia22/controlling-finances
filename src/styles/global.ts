@@ -19,14 +19,18 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
 }
 
-html{
+html {
     @media (max-width: 1080px){
         font-size: 93.75%;
     }
-    @media (max-width: 720px){
+    @media (max-width: 768px){      
+      
         font-size: 87.5%;
+
     }
+   
 }
+
 body{
     background: var(--background);
     -webkit-font-smoothing: antialiased;
@@ -87,6 +91,16 @@ button{
     &:hover{
         filter: brightness(0.8);
     }
+    
 }
+
+@media (max-width: 720px) {
+    html{
+        font-size: 50%;
+    }
+
+    
+}
+
 
 `
